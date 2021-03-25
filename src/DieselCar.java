@@ -1,8 +1,8 @@
 public class DieselCar extends Car {
 
-    boolean hasParticulateFilter;
-    double kmPrL;
-    int greenTax;
+    private boolean hasParticulateFilter;
+    private double kmPrL;
+    private int greenTax;
 
     public DieselCar(String regNr, String brand, String model, int regYear, int numOfDoors, boolean hasParticulateFilter, double kmPrL) {
         super(regNr, brand, model, regYear, numOfDoors);
@@ -15,27 +15,27 @@ public class DieselCar extends Car {
 
         if (kmPrL < 5) {
             greenTax = 10470;
-            if (!hasParticulateFilter){
+            if (!hasParticulateFilter) {
                 greenTax = greenTax + 15260;
             }
         } else if (kmPrL < 10) {
             greenTax = 5500;
-            if (!hasParticulateFilter){
+            if (!hasParticulateFilter) {
                 greenTax = greenTax + 2770;
             }
         } else if (kmPrL < 15) {
             greenTax = 2340;
-            if (!hasParticulateFilter){
+            if (!hasParticulateFilter) {
                 greenTax = greenTax + 1850;
             }
         } else if (kmPrL < 20) {
             greenTax = 1050;
-            if (!hasParticulateFilter){
+            if (!hasParticulateFilter) {
                 greenTax = greenTax + 1390;
             }
         } else {
             greenTax = 330;
-            if (!hasParticulateFilter){
+            if (!hasParticulateFilter) {
                 greenTax = greenTax + 130;
             }
         }

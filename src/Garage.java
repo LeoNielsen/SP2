@@ -1,20 +1,10 @@
 import java.util.ArrayList;
-import java.util.Scanner;
+
 
 public class Garage {
-    final String name = "First Lease";
-    ArrayList<Car> cars = new ArrayList<>();
+    private final String name = "First Lease";
+    private ArrayList<Car> cars = new ArrayList<>();
 
-//    public void addCar(){
-//getUserInput("");
-//
-//
-//    }
-//    public static String getUserInput(String message) {
-//        System.out.println(message);
-//        Scanner scan = new Scanner(System.in);
-//        return scan.nextLine();
-//    }
 
     public void addCar(Car car) {
         cars.add(car);

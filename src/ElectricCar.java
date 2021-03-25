@@ -1,16 +1,16 @@
 public class ElectricCar extends Car {
 
-    int batteryCapacityKWh;
-    int maxKm;
-    double whPrKm;
-    int greenTax;
+    private int batteryCapacityKWh;
+    private int maxKm;
+    private double whPrKm;
+    private int greenTax;
+
     public ElectricCar(String regNr, String brand, String model, int regYear, int numOfDoors, int batteryCapacityKWh, int maxKm, double whPrKm) {
         super(regNr, brand, model, regYear, numOfDoors);
         this.batteryCapacityKWh = batteryCapacityKWh;
         this.maxKm = maxKm;
         this.whPrKm = whPrKm;
     }
-
 
 
     @Override

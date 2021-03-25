@@ -1,8 +1,8 @@
 public class PetrolCar extends Car {
 
-    int octaneNum;
-    double kmPrL;
-    int greenTax;
+    private int octaneNum;
+    private double kmPrL;
+    private int greenTax;
 
     public PetrolCar(String regNr, String brand, String model, int regYear, int numOfDoors, int octaneNum, double kmPrL) {
         super(regNr, brand, model, regYear, numOfDoors);
